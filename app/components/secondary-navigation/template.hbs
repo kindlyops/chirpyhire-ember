@@ -1,1 +1,9 @@
-{{yield}}
+{{#each uneditableSegments as |segment|}}
+  {{#link-to "index" class=(concat styleNamespace '__link')}}
+    {{segment.name}}
+  {{/link-to}}
+{{/each}}
+<div class="{{styleNamespace}}__separator"></div>
+{{#link-to "index" class=(concat styleNamespace '__link')}}{{/link-to}}
+{{#link-to "index" class=(concat styleNamespace '__link')}}{{/link-to}}
+{{#link-to "index" class=(concat styleNamespace '__link')}}{{/link-to}}

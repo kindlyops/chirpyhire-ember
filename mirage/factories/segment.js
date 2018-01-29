@@ -31,6 +31,7 @@ export default Factory.extend({
   new: trait({
     identifier: "new",
     name: "New",
+    is_editable: true,
     afterCreate(segment, server) {
       server.create('predicate', 'new', { segment });
       server.create('predicate', 'all-candidates', { segment });
@@ -40,6 +41,7 @@ export default Factory.extend({
   active: trait({
     identifier: "active",
     name: "Active",
+    is_editable: true,
     afterCreate(segment, server) {
       server.create('predicate', 'active', { segment });
       server.create('predicate', 'all-candidates', { segment });
@@ -49,6 +51,7 @@ export default Factory.extend({
   'slipping-away': trait({
     identifier: "slipping-away",
     name: "Slipping Away",
+    is_editable: true,
     afterCreate(segment, server) {
       server.create('predicate', 'last_seen_more_than_30', { segment });
       server.create('predicate', 'last_seen_less_than_60', { segment });
