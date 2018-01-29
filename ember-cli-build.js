@@ -4,12 +4,15 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    'ember-bootstrap': {
-      'bootstrapVersion': 4,
-      'importBootstrapFont': false,
-      'importBootstrapCSS': false
+    sassOptions: {
+      includePaths: [
+        'node_modules/bootstrap/scss'
+      ]
     }
   });
+
+  app.import('node_modules/popper.js/dist/umd/popper.min.js');
+  app.import('node_modules/bootstrap/dist/js/bootstrap.min.js');
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
