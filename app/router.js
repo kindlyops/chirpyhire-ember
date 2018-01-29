@@ -7,6 +7,15 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('apps', function() {
+    this.route('app',  { path: '/:app_id' }, function() {
+      this.route('people', function() {
+        this.route('segments', function() {
+          this.route('segment', { path: '/:segment_id' });
+        });
+      });
+    });
+  });
 });
 
 export default Router;
