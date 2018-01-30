@@ -1,1 +1,7 @@
-{{yield}}
+<div class="{{styleNamespace}}__dropdowns">
+  {{platform/filters-dropdown options=roleOptions}}
+</div>
+{{#each filters as |filter|}}
+  {{platform/main-filter filter}}
+{{/each}}
+{{platform/add-filter}}

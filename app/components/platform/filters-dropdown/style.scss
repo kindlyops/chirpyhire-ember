@@ -1,0 +1,40 @@
+&__button {
+  border: 0;
+  background-color: color('white');
+  cursor: pointer;
+  color: gray('600');
+  font-weight: 700;
+  padding: .5rem .75rem;
+  border: 1px solid color('white');
+  border-radius: 3px;
+  font-size: .875rem;
+
+  svg {
+    margin-left: .25rem;
+  }
+
+  &:hover, &:focus, &:active, &:visited {
+    outline: 0;
+    background-color: darken(color('white'), 5%);
+    border: 1px solid gray('400');
+    box-shadow: 0 1px 5px 0 gray('400');
+  }
+
+  &--open {
+    background-color: darken(color('white'), 5%);
+    border: 1px solid gray('400');
+    box-shadow: inset 0 1px 3px 0 gray('400');
+  }
+}
+
+&__options {
+  padding: .5rem 0;
+  width: 121.48px;
+  border-radius: 3px;
+  border: 1px solid gray('400');
+  box-shadow: 0 1px 5px 0 gray('400');
+  background-color: color('white');
+  cursor: pointer;
+  color: gray('600');
+  font-size: .875rem;
+}

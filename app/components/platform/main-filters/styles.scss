@@ -1,5 +1,10 @@
 & {
   height: 100%;
   flex-grow: 1;
+  max-width: 300px;
   border-right: 1px solid gray('400');
+}
+
+&__dropdowns {
+  display: flex;
 }

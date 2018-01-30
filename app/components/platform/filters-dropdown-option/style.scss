@@ -1,0 +1,6 @@
+& {
+  padding: .5rem;
+  &:hover {
+    background-color: darken(color('white'), 5%);
+  }
+}
