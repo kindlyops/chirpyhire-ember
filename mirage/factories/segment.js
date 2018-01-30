@@ -1,22 +1,16 @@
 import { Factory, faker, trait } from 'ember-cli-mirage';
 
 export default Factory.extend({
-  is_company: false,
   is_editable: false,
   is_predefined: true,
   app_id: faker.random.number(),
-  company_count: faker.random.number({ min: 0, max: 100 }),
   count: faker.random.number({ min: 0, max: 100 }),
 
-  afterCreate(segment) {
-    segment.user_count = segment.count;
-  },
-
-  'all-visitors': trait({
-    identifier: "all-visitors",
+  'all-leads': trait({
+    identifier: "all-leads",
     name: "All People",
     afterCreate(segment, server) {
-      server.create('predicate', 'all-visitors', { segment });
+      server.create('predicate', 'all-leads', { segment });
     }
   }),
 

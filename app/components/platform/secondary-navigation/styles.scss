@@ -1,0 +1,37 @@
+& {
+  @extend .navbar;
+  @extend .navbar-expand-lg;
+  @extend .navbar-dark;
+  @extend .bg-secondary;
+}
+
+&__link {
+  @extend .nav-link;
+  padding: .1rem .75rem;
+  font-size: .875rem;
+  font-weight: 700;
+  color: color('white');
+  opacity: .6;
+
+  svg {
+    margin-right: .25rem;
+  }
+
+  &:hover, &.active {
+    opacity: 1;
+    color: color('white');
+  }
+
+  span {
+    font-weight: 400;
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+}
+
+&__separator {
+  @extend .separator;
+  margin: 0 .25rem;
+}

@@ -1,0 +1,23 @@
+@function calculateRem($size) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+$maxFontSize: 200;
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+  @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+    @for $i from 1 through $maxFontSize {
+      .f#{$infix}-#{$i} {
+        @include fontSize($i);
+      }
+    }
+  }
+}

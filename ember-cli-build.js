@@ -4,10 +4,18 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
+    sourcemaps: {
+      enabled: EmberApp.env() !== 'production',
+      extensions: ['js']
+    },
     sassOptions: {
+      sourceMapEmbed: true,
       includePaths: [
         'node_modules/bootstrap/scss'
       ]
+    },
+    autoprefixer: {
+      sourcemap: true,
     }
   });
 

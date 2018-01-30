@@ -1,0 +1,36 @@
+{{#link-to 'apps.app.people.segments.segment' allCandidates.identifier class=(concat styleNamespace '__link')}}
+  <i class='fas fa-users'></i>
+  All candidates
+  <span>  
+    ({{allCandidates.humanizedCount}})
+  </span>
+{{/link-to}}
+{{#link-to 'apps.app.people.segments.segment' allLeads.identifier class=(concat styleNamespace '__link')}}
+  <i class='fas fa-users'></i>
+  All leads
+  <span>
+    ({{allLeads.humanizedCount}})
+  </span>
+{{/link-to}}
+<div class="{{styleNamespace}}__separator"></div>
+{{#link-to 'apps.app.people.segments.segment' newCandidates.identifier class=(concat styleNamespace '__link')}}
+  <i class='fas fa-user'></i>
+  New
+  <span>
+    ({{newCandidates.humanizedCount}})
+  </span>
+{{/link-to}}
+{{#link-to 'apps.app.people.segments.segment' activeCandidates.identifier class=(concat styleNamespace '__link')}}
+  <i class='fas fa-heartbeat'></i>
+  Active
+  <span>
+    ({{activeCandidates.humanizedCount}})
+  </span>
+{{/link-to}}
+{{#link-to 'apps.app.people.segments.segment' slippingAwayCandidates.identifier class=(concat styleNamespace '__link')}}
+  <i class='fas fa-frown'></i>
+  Slipping away
+  <span>
+    ({{slippingAwayCandidates.humanizedCount}})
+  </span>
+{{/link-to}}

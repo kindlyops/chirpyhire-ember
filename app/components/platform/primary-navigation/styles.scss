@@ -2,10 +2,11 @@
   @extend .navbar;
   @extend .navbar-expand-lg;
   @extend .navbar-dark;
-  @extend .bg-dark;
+  @extend .bg-primary;
 }
 
 &__product {
   @extend .navbar-brand;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  padding: .125rem 0;
 }

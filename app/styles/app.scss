@@ -1,2 +1,14 @@
+@import "base";
 @import "bootstrap";
 @import "pod-styles.scss";
+@import "typography";
+@import "separator";
+@import "segment";
+
+html, body, body > [class="ember-view"] {
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+}

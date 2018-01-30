@@ -1,0 +1,22 @@
+$green:           #37AA7C;
+$green-secondary: #2E8D67;
+$green-tertiary:  #6AAA90;
+$green-quatenary: #1A2A24;
+$green-quinary:   #267757;
+$white: mix(#fff, $green, 98%);
+$black: mix(#000, $green, 98%);
+
+$colors: (
+  "green": $green
+);
+
+$theme-colors: (
+  "primary": $green,
+  "secondary": $green-secondary,
+  "success": $green-quinary,
+  "info": $green-tertiary,
+  "dark": $green-quatenary,
+);
+
+
+

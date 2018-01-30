@@ -8,11 +8,11 @@ export default Factory.extend({
     value: "candidate_role"
   }),
 
-  'all-visitors': trait({
+  'all-leads': trait({
     type: "role", 
     attribute: "role", 
     comparison: "eq", 
-    value: "visitor_role"
+    value: "lead_role"
   }),
 
   new: trait({
