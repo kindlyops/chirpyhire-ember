@@ -3,9 +3,9 @@
   flex-grow: 1;
   max-width: 300px;
   border-right: 1px solid gray('400');
+  padding: 1rem;
 }
 
 &__dropdowns {
   display: flex;
-  padding: 1rem;
 }

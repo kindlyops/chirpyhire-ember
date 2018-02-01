@@ -1,0 +1,9 @@
+&__button {
+  @extend .btn;
+  @extend .btn-link;
+  font-size: .875rem;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
