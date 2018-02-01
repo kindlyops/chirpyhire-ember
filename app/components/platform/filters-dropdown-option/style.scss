@@ -1,6 +1,16 @@
 & {
   padding: .5rem;
+
+  svg {
+    margin-left: .25rem;
+  }
+
   &:hover {
     background-color: darken(color('white'), 5%);
+  }
+
+  &--selected {
+    font-weight: 700;
+    color: theme-color('secondary');
   }
 }

@@ -1,15 +1,13 @@
-{{#basic-dropdown onClose=(action "toggleSelected") onOpen=(action "toggleDropdown") as |dropdown|}}
+{{#basic-dropdown onClose=(action "toggleDropdown") onOpen=(action "toggleDropdown") as |dropdown|}}
   {{#dropdown.trigger}}
     <button class="{{styleNamespace}}__button {{isShowingDropdownClass}}">
-      {{selected.label}}
+      {{selected}}
       <i class='fas fa-caret-down'></i>
     </button>
   {{/dropdown.trigger}}
   {{#dropdown.content}}
     <div class="{{styleNamespace}}__options">
-      {{#each options as |option|}}
-        {{platform/filters-dropdown-option dropDownSelected=selected option=option}}
-      {{/each}}
+      {{yield selected dropdown (action "updateSelection")}}
     </div>
   {{/dropdown.content}}
 {{/basic-dropdown}}

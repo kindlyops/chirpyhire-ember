@@ -12,8 +12,8 @@ export default Component.extend({
     toggleDropdown() {
       this.toggleProperty('isShowingDropdown');
     },
-    toggleSelected(dropdown) {
-      debugger;
+    updateSelection(selected) {
+      this.set('selected', selected);
     }
   }
 });

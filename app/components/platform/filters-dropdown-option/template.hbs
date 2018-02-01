@@ -1,5 +1,5 @@
-<div class="{{isSelectedClass}}">
-  <span>{{option.label}}</span>
+<div class="{{isSelectedClass}}" {{action 'select'}}>
+  <span>{{label}}</span>
   {{#if isSelected}}
     <i class='fas fa-check'></i>
   {{/if}}
