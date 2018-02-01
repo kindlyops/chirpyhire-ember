@@ -1,10 +1,10 @@
 <div class="{{styleNamespace}}__dropdowns">
-  {{#platform/filters-dropdown selected='Candidates' as |selected dropdown updateSelection|}}
+  {{#platform/filters-dropdown selected='Seekers' as |selected dropdown updateSelection|}}
     {{platform/filters-dropdown-option
       onSelect=(action updateSelection)
       dropdownSelection=selected
       dropdown=dropdown
-      label='Candidates'}}
+      label='Seekers'}}
     {{platform/filters-dropdown-option
       onSelect=(action updateSelection)
       dropdownSelection=selected

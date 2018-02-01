@@ -6,7 +6,7 @@ export default Factory.extend({
   },
   afterCreate(app, server) {
     server.create('segment', 'all-leads', { app });
-    server.create('segment', 'all-candidates', { app });
+    server.create('segment', 'all-seekers', { app });
     server.create('segment', 'new', { app });
     server.create('segment', 'active', { app });
     server.create('segment', 'slipping-away', { app });

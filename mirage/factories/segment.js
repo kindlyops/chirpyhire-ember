@@ -14,11 +14,11 @@ export default Factory.extend({
     }
   }),
 
-  'all-candidates': trait({
-    identifier: "all-candidates",
-    name: "All candidates",
+  'all-seekers': trait({
+    identifier: "all-seekers",
+    name: "All seekers",
     afterCreate(segment, server) {
-      server.create('predicate', 'all-candidates', { segment });
+      server.create('predicate', 'all-seekers', { segment });
     }
   }),
 
@@ -28,7 +28,7 @@ export default Factory.extend({
     is_editable: true,
     afterCreate(segment, server) {
       server.create('predicate', 'new', { segment });
-      server.create('predicate', 'all-candidates', { segment });
+      server.create('predicate', 'all-seekers', { segment });
     }
   }),
 
@@ -38,7 +38,7 @@ export default Factory.extend({
     is_editable: true,
     afterCreate(segment, server) {
       server.create('predicate', 'active', { segment });
-      server.create('predicate', 'all-candidates', { segment });
+      server.create('predicate', 'all-seekers', { segment });
     }
   }),
 
@@ -50,7 +50,7 @@ export default Factory.extend({
       server.create('predicate', 'last_seen_more_than_30', { segment });
       server.create('predicate', 'last_seen_less_than_60', { segment });
       server.create('predicate', 'more_than_5_sessions', { segment });
-      server.create('predicate', 'all-candidates', { segment });
+      server.create('predicate', 'all-seekers', { segment });
     }
   })
 });

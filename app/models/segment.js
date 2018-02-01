@@ -15,9 +15,9 @@ export default DS.Model.extend({
   humanizedCount: computed('count', function() {
     if(this.get('is_predefined') && this.get('is_editable')) {
       if(this.get('count') !== 1) {
-        return `${this.get('count')} candidates`;
+        return `${this.get('count')} seekers`;
       } else {
-        return `${this.get('count')} candidate`;
+        return `${this.get('count')} seeker`;
       }
     } else {
       return this.get('count');

@@ -1,11 +1,11 @@
 import { Factory, trait } from 'ember-cli-mirage';
 
 export default Factory.extend({
-  'all-candidates': trait({
+  'all-seekers': trait({
     type: "role", 
     attribute: "role", 
     comparison: "eq", 
-    value: "candidate_role"
+    value: "seeker_role"
   }),
 
   'all-leads': trait({

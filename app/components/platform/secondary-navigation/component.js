@@ -5,9 +5,9 @@ export default Component.extend({
   segments: computed('app', function() {
     return this.get('app.segments');
   }),
-  allCandidates: computed('segments', function(){
+  allSeekers: computed('segments', function(){
     return this.get('segments').find((segment) => {
-      return segment.get('identifier') === 'all-candidates';
+      return segment.get('identifier') === 'all-seekers';
     });
   }),
   allLeads: computed('segments', function(){
@@ -15,17 +15,17 @@ export default Component.extend({
       return segment.get('identifier') === 'all-leads';
     });
   }),
-  newCandidates: computed('segments', function(){
+  newSeekers: computed('segments', function(){
     return this.get('segments').find((segment) => {
       return segment.get('identifier') === 'new';
     });
   }),
-  activeCandidates: computed('segments', function(){
+  activeSeekers: computed('segments', function(){
     return this.get('segments').find((segment) => {
       return segment.get('identifier') === 'active';
     });
   }),
-  slippingAwayCandidates: computed('segments', function(){
+  slippingAwaySeekers: computed('segments', function(){
     return this.get('segments').find((segment) => {
       return segment.get('identifier') === 'slipping-away';
     });
