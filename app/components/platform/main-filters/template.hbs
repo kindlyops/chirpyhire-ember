@@ -12,7 +12,7 @@
       label='Leads'}}
   {{/platform/filters-dropdown}}
 </div>
-{{#each filters as |filter|}}
-  {{platform/main-filter filter}}
+{{#each segment.predicates as |filter|}}
+  {{platform/main-filter filter=filter}}
 {{/each}}
 {{platform/add-filter}}

@@ -1,11 +1,11 @@
-{{#link-to 'apps.app.people.segments.segment' allSeekers.identifier class=(concat styleNamespace '__link')}}
+{{#link-to 'apps.app.people.segments.segment' allSeekers class=(concat styleNamespace '__link')}}
   <i class='fas fa-users'></i>
   {{allSeekers.name}}
   <span>  
     ({{allSeekers.humanizedCount}})
   </span>
 {{/link-to}}
-{{#link-to 'apps.app.people.segments.segment' allLeads.identifier class=(concat styleNamespace '__link')}}
+{{#link-to 'apps.app.people.segments.segment' allLeads class=(concat styleNamespace '__link')}}
   <i class='fas fa-users'></i>
   {{allLeads.name}}
   <span>
@@ -13,21 +13,21 @@
   </span>
 {{/link-to}}
 <div class="{{styleNamespace}}__separator"></div>
-{{#link-to 'apps.app.people.segments.segment' newSeekers.identifier class=(concat styleNamespace '__link')}}
+{{#link-to 'apps.app.people.segments.segment' newSeekers class=(concat styleNamespace '__link')}}
   <i class='fas fa-user'></i>
   {{newSeekers.name}}
   <span>
     ({{newSeekers.humanizedCount}})
   </span>
 {{/link-to}}
-{{#link-to 'apps.app.people.segments.segment' activeSeekers.identifier class=(concat styleNamespace '__link')}}
+{{#link-to 'apps.app.people.segments.segment' activeSeekers class=(concat styleNamespace '__link')}}
   <i class='fas fa-heartbeat'></i>
   {{activeSeekers.name}}
   <span>
     ({{activeSeekers.humanizedCount}})
   </span>
 {{/link-to}}
-{{#link-to 'apps.app.people.segments.segment' slippingAwaySeekers.identifier class=(concat styleNamespace '__link')}}
+{{#link-to 'apps.app.people.segments.segment' slippingAwaySeekers class=(concat styleNamespace '__link')}}
   <i class='fas fa-frown'></i>
   {{slippingAwaySeekers.name}}
   <span>
