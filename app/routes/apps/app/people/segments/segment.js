@@ -1,8 +1,7 @@
 import Route from '@ember/routing/route';
 
 export default Route.extend({
-  model() {
-    return {};
-    // return this.get('store').create('search');
+  model({ segment_id }) {
+    return { segment_id };
   }
 });
